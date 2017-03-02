@@ -9,7 +9,7 @@ dependencies:
 
 test:
   override:
-    - npm run test --single-run
+    - npm run test -- --single-run
     - npm run e2e
 
 deployment:
