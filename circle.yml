@@ -1,0 +1,19 @@
+machine:
+  node:
+    version: 7.7.0
+
+dependencies:
+  post:
+    - npm run build
+
+test:
+  override:
+    - npm run test --single-run
+    - npm run e2e
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - zip -r devtools.zip devtools
+      - webstore upload --source devtools.zip --extension-id $CW_EXTENSION_ID --client-id $CW_CLIENT_ID --client-secret $CW_CLIENT_SECRET --refresh-token $CW_REFRESH_TOKEN
