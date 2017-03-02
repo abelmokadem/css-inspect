@@ -17,4 +17,4 @@ deployment:
     branch: feature/#5-circle-ci
     commands:
       - zip -r devtools.zip devtools
-      - webstore upload --source devtools.zip --extension-id $CW_EXTENSION_ID --client-id $CW_CLIENT_ID --client-secret $CW_CLIENT_SECRET --refresh-token $CW_REFRESH_TOKEN
+      - npm run deploy

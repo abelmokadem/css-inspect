@@ -8,6 +8,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "deploy": "webstore upload --source devtools.zip --extension-id $CW_EXTENSION_ID --client-id $CW_CLIENT_ID --client-secret $CW_CLIENT_SECRET --refresh-token $CW_REFRESH_TOKEN",
     "zip": "zip -r devtools.zip devtools",
     "e2e": "ng e2e"
   },
