@@ -14,7 +14,7 @@ test:
 
 deployment:
   staging:
-    branch: feature/#5-circle-ci
+    branch: master
     commands:
       - zip -r devtools.zip devtools
       - npm run deploy
