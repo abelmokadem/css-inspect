@@ -3,8 +3,8 @@ machine:
     version: 7.7.0
 
 dependencies:
-  post:
-    - npm install --only=dev
+  override:
+    - npm install
     - npm run build
 
 test:
