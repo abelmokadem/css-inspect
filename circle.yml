@@ -4,6 +4,7 @@ machine:
 
 dependencies:
   post:
+    - npm install --only=dev
     - npm run build
 
 test:
