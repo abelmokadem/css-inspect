@@ -7,8 +7,8 @@ describe('css-inspect App', () => {
     page = new CssInspectPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display Resources on left hand side panel', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getPanelText()).toEqual('Resources');
   });
 });

@@ -8,9 +8,9 @@ describe('AnalysisComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AnalysisComponent ]
+      declarations: [AnalysisComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +19,7 @@ describe('AnalysisComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the app-analysis component', async(() => {
     expect(component).toBeTruthy();
-  });
+  }));
 });

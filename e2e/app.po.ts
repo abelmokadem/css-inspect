@@ -4,8 +4,7 @@ export class CssInspectPage {
   navigateTo() {
     return browser.get('/');
   }
-
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getPanelText(){
+    return element(by.className('header')).getText();
   }
 }
