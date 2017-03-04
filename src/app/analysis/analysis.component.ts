@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouteChangeService } from '../services/route-change.service';
 
 @Component({
   selector: 'app-analysis',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./analysis.component.scss']
 })
 export class AnalysisComponent implements OnInit {
-
-  constructor() { }
+  public resourceName: string;
+  constructor(private _routeChangeService: RouteChangeService) {
+    this._routeChangeService.resourceName.subscribe(resource => {
+      this.resourceName = resource;
+    })
+  }
 
   ngOnInit() {
+
   }
 
 }

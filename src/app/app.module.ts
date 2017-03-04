@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AnalysisComponent } from './analysis/analysis.component';
 
+import {RouteChangeService} from './services/route-change.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,7 @@ import { AnalysisComponent } from './analysis/analysis.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [RouteChangeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

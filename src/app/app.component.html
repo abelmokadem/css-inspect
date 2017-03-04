@@ -6,10 +6,7 @@
                     Resources
                 </div>
                 <div class="content">
-                    <div class="content-items">index.css</div>
-                    <div class="content-items">another.css</div>
-                    <div class="content-items">contact.css</div>
-                    <div class="content-items">about.css</div>
+                    <div *ngFor="let resource of resourceGroup" class="content-items" (click)="getResourceAnalysis(resource)">{{resource}}</div>
                 </div>
             </div>
         </div>
